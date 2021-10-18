@@ -59,7 +59,33 @@ const questions = () => {
                 if (usageInput) {
                   return true;
                 } else {
-                  console.log('Please enter usage instructions and examples!');
+                  console.log('Please enter usage instructions!');
+                  return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address? (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                return true;
+                } else {
+                console.log('Please enter your Email address!');
+                return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your GitHub username? (Required)',
+            validate: githubInput => {
+                if (githubInput) {
+                  return true;
+                } else {
+                  console.log('Please enter your GitHub username!');
                   return false;
                 }
             }
@@ -99,6 +125,12 @@ const questions = () => {
             name: 'tutorials',
             message: 'Provide a list of the Tutorials used.',
             when: ({ confirmTutorials }) => confirmTutorials
+        },
+        {
+            type: "list",
+            message: "What license does your project have?",
+            name: "license",
+            choices: ["MIT", "APACHE-2.0","GPL 3.0", "Mozilla 2.0","None"]
         }
     ]);
 }
