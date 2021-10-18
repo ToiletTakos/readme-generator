@@ -21,4 +21,4 @@ Your task is to create a command-line application that dynamically generates a p
 ![Whats displayed after answering the final question](./assets/photos/Finished.png)
 
 ## Display video
-![video displaying the functioning of the app](https://watch.screencastify.com/v/SWthZ00wq0c5vgfaKDCd)
+[video displaying the functioning of the app](https://watch.screencastify.com/v/SWthZ00wq0c5vgfaKDCd)
